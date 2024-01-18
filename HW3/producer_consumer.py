@@ -50,10 +50,10 @@ def consumer_function(consumer_id, shared_buffer):
 
 
 def main():
-    buffer_size = 5
-    total_items = 500
-    num_producers = 5
-    num_consumers = 3
+    buffer_size = int(input("Enter the size of the buffer: "))
+    total_items = int(input("Enter the total number of items to be produced and consumed: "))
+    num_producers = int(input("Enter the number of producers: "))
+    num_consumers = int(input("Enter the number of consumers: "))
 
     shared_buffer = SharedBuffer(max_size=buffer_size, total_items=total_items)
 
@@ -70,7 +70,3 @@ def main():
 
     for thread in all_threads:
         thread.join()
-
-
-if __name__ == "__main__":
-    main()

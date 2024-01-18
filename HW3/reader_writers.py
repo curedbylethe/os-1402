@@ -49,9 +49,9 @@ def simulate_readers_writers(simulation, num_readers, num_writers):
         thread.join()
 
 
-if __name__ == "__main__":
+def main():
     simulation = ReadersWritersSimulation()
-    num_readers = 20
-    num_writers = 15
+    num_readers = int(input("Enter the number of readers: "))
+    num_writers = int(input("Enter the number of writers: "))
 
     simulate_readers_writers(simulation, num_readers, num_writers)

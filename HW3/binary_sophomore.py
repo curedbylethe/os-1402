@@ -55,7 +55,7 @@ class Process(threading.Thread):
 
 
 def main():
-    n = 10
+    n = int(input("Enter the number of processes: "))
 
     binary_semaphore = BinarySemaphore()
     shared_resource = SharedResource(binary_semaphore=binary_semaphore)
@@ -69,7 +69,3 @@ def main():
 
     for process_thread in processes:
         process_thread.join()
-
-
-if __name__ == "__main__":
-    main()
