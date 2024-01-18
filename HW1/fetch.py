@@ -1,7 +1,7 @@
 """Multithreading fetch of City weather data"""
 
 import concurrent.futures
-from hw1.cities import cities
+from HW1.cities import cities
 
 
 def fetch():

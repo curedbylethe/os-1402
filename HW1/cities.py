@@ -1,4 +1,4 @@
-from hw1.city import City
+from HW1.city import City
 
 cities = [
     City("Tehran", 35.7219, 51.3347),

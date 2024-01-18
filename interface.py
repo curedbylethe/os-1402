@@ -22,7 +22,7 @@ class Interface:
     def handle_hw1(cls, problem_number: int):
         if problem_number == 1:
             print("Fetching weather for Iranian cities...")
-            from hw1.fetch import fetch
+            from HW1.fetch import fetch
             fetch()
         elif problem_number == 2:
             print("Generating processes isn't implemented yet!")
